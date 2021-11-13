@@ -1,6 +1,10 @@
 package com.example.pagingtmdbdapr.activity
 
-
+import io.reactivex.Completable
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.functions.Action
+import io.reactivex.schedulers.Schedulers
 import android.graphics.Movie
 import android.os.Bundle
 import android.util.Log
@@ -29,33 +33,12 @@ class MainActivity : AppCompatActivity() {
         recyclerView.setLayoutManager(object : LinearLayoutManager(this@MainActivity) {
 
         })
-        serviceCallB()
+        serviceCall()
     }
-/*
-    fun serviceCall() {
-        //    val networkService = com.example.pagingtmdbdapr.service.NetworkService()
-        val networkService = NetworkService.getService()
-
-        networkService.getMovies()
-            .subscribe(
-                { response ->
-                    Log.i("aa", "aaa")
-
-
-                },
-                {
-                    Log.i("aa", "aaa")
-
-                })
-
-
-    }
-
- */
     // https://api.themoviedb.org/3/movie/top_rated?api_key=b199eab06bc931ed71cd20c95e4b2bb3
 
 
-    fun serviceCallB() {
+    fun serviceCall() {
         val networkService = NetworkService.getService()
         val callx = networkService.getMovies()
         callx.enqueue(object : Callback<MovieList> {
