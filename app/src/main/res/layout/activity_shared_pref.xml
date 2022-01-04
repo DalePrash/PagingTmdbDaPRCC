@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pagingtmdbdapr.sharedpref.SharedPreferenceMainActivity">
+
+
+
+        <Button
+            android:id="@+id/buttonSharedA"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="482dp"
+            android:text="SAVE DATA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonSharedB"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="582dp"
+            android:text="RetreiveData"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editSharedA"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="390dp"
+            android:gravity="center"
+            android:hint="Fill In  AA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editSharedB"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="350dp"
+            android:gravity="center"
+            android:hint="Fill In BB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textSharedA"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="AAA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textSharedB"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="100dp"
+android:text="BBB"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textSharedView4"
+
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+
+            android:layout_marginTop="180dp"
+            android:gravity="center"
+            android:text="Id"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/textSharedmovieId"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="230dp"
+
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textmovieLanguage" />
+
+        <TextView
+            android:id="@+id/textSharedView5"
+
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="290dp"
+
+            android:gravity="center"
+            android:text="Adult"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textmovieLanguage" />
+
+        <TextView
+
+            android:id="@+id/textShared8"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="340dp"
+
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textmovieLanguage" />
+        <!-- android:checked="@{viewmodel.rememberMe}" -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

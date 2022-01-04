@@ -11,11 +11,153 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="kit" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.pagingtmdbdapr.snackbar.SnackBarActivity">
+            <intent-filter>
+                <action android:name="dfes" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.example.pagingtmdbdapr.cardview.CardViewAc">
+            <intent-filter>
+                <action android:name="fsdf" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+
+        <activity android:name="com.example.pagingtmdbdapr.notifications.SomePendingActivtity">
+            <intent-filter>
+                <action android:name="add" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.example.pagingtmdbdapr.notifications.NotificationsActivity">
+            <intent-filter>
+                <action android:name="android.intent.fs" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.example.pagingtmdbdapr.workmanager.WorkManagerMainActivity">
+            <intent-filter>
+                <action android:name="ghh" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.pagingtmdbdapr.fragments.MainFragment">
+            <intent-filter>
+                <action android:name="addw" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity android:name="com.example.pagingtmdbdapr.fragments.SwipeMainFragments">
+            <intent-filter>
+                <action android:name="ser" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.pagingtmdbdapr.movieroom.ActivityMovieRetrieveCache">
+            <intent-filter>
+                <action android:name="deqs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.pagingtmdbdapr.ui.ConstraintActivityPractise"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="fdsfsd" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.example.pagingtmdbdapr.sharedpref.SharedPreferenceMainActivity">
+            <intent-filter>
+                <action android:name="avv" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.pagingtmdbdapr.viewmodel.ViewModelMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.pagingtmdbdapr.kottln.ToConverKotlin">
+            <intent-filter>
+                <action android:name="dds" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.example.pagingtmdbdapr.workmanager.async.MainAsyncActivity">
+            <intent-filter>
+                <action android:name="androdidf" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.example.pagingtmdbdapr.service.bind.BindUIServiceActivity">
+            <intent-filter>
+                <action android:name="fsws" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name="com.example.pagingtmdbdapr.combinedroomservice.CombinedActivity">
+            <intent-filter>
+                <action android:name="android.intendd" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <service android:name=".service.bind.BindService"/>
     </application>
 
 </manifest>

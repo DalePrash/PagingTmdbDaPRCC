@@ -6,5 +6,46 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="CoreThemeButton" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:startColor">#90EE90</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:endColor">#FF00FF</item>
 
+    </style>
+
+    <style name="xyz" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:startColor">#90EE90</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:endColor">#FF00FF</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+<!--
+   /* <style name="Theme.App" parent="Theme.MaterialComponents.*">
+        ...
+        <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
+        <item name="snackbarButtonStyle">@style/Widget.App.SnackbarButton</item>
+    </style>
+
+    <style name="Widget.App.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Snackbar</item>
+        <item name="actionTextColorAlpha">1</item>
+    </style>
+
+    <style name="Widget.App.SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">@color/shrine_pink_100</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Snackbar" parent="">
+        <item name="colorPrimary">@color/shrine_pink_100</item>
+        <item name="colorOnSurface">@color/shrine_pink_900</item>
+    </style>
+
+*/
+-->
 </resources>

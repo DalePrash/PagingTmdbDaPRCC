@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linearLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, Your Detailed notification view goes here...."
+        tools:layout_conversion_absoluteHeight="400dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+    <Button
+        android:id="@+id/xButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notify"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_editor_absoluteY="460dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_conversion_absoluteWidth="88dp" />
+
+
+</LinearLayout>

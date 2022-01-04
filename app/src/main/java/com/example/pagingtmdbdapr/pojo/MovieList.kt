@@ -1,14 +1,22 @@
 package com.example.pagingtmdbdapr.pojo
 
+import androidx.room.Embedded
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
-
-data class MovieList (
+//@Entity(tableName = "movieparts_table")
+public data class MovieList(
+   // @Embedded
     @SerializedName("results")
     val movies: List<Movies>
 )
-data class Movies(
+@Entity(tableName = "movieparts_table")
+public data class Movies(
     @SerializedName("original_title")
     val movieTitle: String,
     @SerializedName("original_language")
-    val movieLanguage: String
-    )
+    val movieLanguage: String,
+    @PrimaryKey
+    @SerializedName("movieId")
+    val id: Long
+)

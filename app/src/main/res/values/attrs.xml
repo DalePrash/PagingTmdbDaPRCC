@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="customWidgetA">
+        <attr name="minInputLength" format="integer"/>
+        <attr name="maxInputLength" format="integer"/>
+        <attr name="customTypeFace" format="string"/>
+        <attr name="buttonTypeface" format="string"/>
+        <attr name="inactiveButton" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="imageViewText">
+        <attr name="Image" format="reference"/>
+        <attr name="Text" format="string"/>
+
+    </declare-styleable>
+</resources>

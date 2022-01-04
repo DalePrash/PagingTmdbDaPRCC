@@ -27,8 +27,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
     @NonNull
     @Override
     public MovieHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.movie_page, parent, false);
-        return new MovieHolder(view);    }
+       // View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.movie_page, parent, false);
+        //return new MovieHolder(view);
+
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_card_view, parent, false);
+        return new MovieHolder(view);
+
+    }
 
     @Override
     public void onBindViewHolder(@NonNull MovieHolder holder, int position) {
@@ -47,8 +52,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder>
         TextView movieLanguage;
         public MovieHolder(@NonNull View itemView) {
             super(itemView);
-            movieTitle = itemView.findViewById(R.id.movieTitle);
-            movieLanguage = itemView.findViewById(R.id.movieLanguage);
+        //    movieTitle = itemView.findViewById(R.id.movieTitle);
+         //   movieLanguage = itemView.findViewById(R.id.movieLanguage);
+
+
+
+            movieTitle = itemView.findViewById(R.id.idCardTitle);
+               movieLanguage = itemView.findViewById(R.id.idCardLanguage);
 
         }
     }
