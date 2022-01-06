@@ -30,7 +30,7 @@ public class ViewModelMain  extends AppCompatActivity implements ViewModelContra
      //   setContentView(R.layout.activity_view_model);
             binding = DataBindingUtil.setContentView(this, R.layout.activity_view_model);
         customViewViewModel = ViewModelProviders.of(this).get(CustomViewViewModel.class);
-te = findViewById(R.id.textXyz);
+       te = findViewById(R.id.textXyz);
         cake();
         User user= new User("Aakash","THIIISS");
 //binding.setUser

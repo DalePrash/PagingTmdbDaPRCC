@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMenu"
+        android:layout_width="match_parent"
+        android:background="#03DAC5"
+        android:layout_height="30dp"
+        android:layout_marginBottom="54dp"
+        android:theme="?attr/actionBarTheme"
+        app:title="TIITII">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/buttonmenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="162dp"
+        android:text="goToNext"
+
+        />
+    <TextView
+        android:id="@+id/texttet"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="192dp"
+        android:text="tet"
+        android:gravity="center"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textMenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="130dp"
+        android:gravity="center"
+        android:text="In Main menu tool"
+       />
+
+</LinearLayout>

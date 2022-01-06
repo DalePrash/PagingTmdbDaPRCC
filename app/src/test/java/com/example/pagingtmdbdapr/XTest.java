@@ -14,22 +14,15 @@ import static org.mockito.Mockito.verify;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.ArgumentMatchers;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.MockitoJUnitRunner;
-
-import io.reactivex.disposables.CompositeDisposable;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.when;
-
-import org.junit.runner.RunWith;
 
 @RunWith(MockitoJUnitRunner.class)
 public class XTest {
@@ -37,7 +30,7 @@ public class XTest {
 
 
     @Mock
-    ClassMockitoA databaseMock;
+    ClassMockitoA mockA;
 
     @Mock
     Service service;
@@ -71,6 +64,12 @@ public class XTest {
         ClassMockitoD classd = new ClassMockitoD();
         classd.methodDD();
     }
+    @Test
+    public void testMockInsideDD() {
+       when(MockC.methodcc()).thenReturn("aaaa");
+       MockD.methodDedependent(MockC);
+       assertEquals(MockC.methodcc(),"aaaa");
+    }
 
     @Test
     public void testAddParamters() {
@@ -101,9 +100,9 @@ public class XTest {
 
     @Test
     public void testQuery()  {
-        assertNotNull(databaseMock);
-        when(databaseMock.isAvailable()).thenReturn(true);
-        ClassMockitoB t  = new ClassMockitoB(databaseMock);
+        assertNotNull(mockA);
+        when(mockA.isAvailable()).thenReturn(true);
+        ClassMockitoB t  = new ClassMockitoB(mockA);
         boolean check = t.query("* from t");
         assertTrue(check);
     }
@@ -112,9 +111,9 @@ public class XTest {
    public void ensureMockitoReturnsTheConfiguredValue() {
 
         // define return value for method getUniqueId()
-        when(databaseMock.getUniqueId()).thenReturn("cake");
+        when(mockA.getUniqueId()).thenReturn("cake");
 
-        ClassMockitoB service = new ClassMockitoB(databaseMock);
+        ClassMockitoB service = new ClassMockitoB(mockA);
         // use mock in test....
         assertEquals(service.toString(), "cake");
     }
@@ -122,7 +121,7 @@ public class XTest {
 
     @Test
     public void testOverridenMethod() {
-        when(databaseMock.onStartCommand(inte,0,0)).thenReturn(1);
+        when(mockA.onStartCommand(inte,0,0)).thenReturn(1);
         //verify(databaseMock).onStartCommand(inte,0,0);
         verify(databaseMockB).query("ddd");
 //  onStartCOmman can defenitely be called
@@ -177,12 +176,12 @@ aa.onStartCommand(inte,0,0);
         // create and configure mock
 
         // cake , coke still passes the test
-        when(databaseMock.getUniqueId()).thenReturn("cake");
-        databaseMock.getUniqueId();
+        when(mockA.getUniqueId()).thenReturn("cake");
+        mockA.getUniqueId();
       //  verify(databaseMock).setUniqueId(ArgumentMatchers.eq("cake"));
 
-        verify(databaseMock).getUniqueId();
-        verify(databaseMock).getUniqueId();
+        verify(mockA).getUniqueId();
+        verify(mockA).getUniqueId();
 
         // call method testing on the mock with parameter 12
       //  databaseMock.setUniqueId("cake");
@@ -195,10 +194,10 @@ aa.onStartCommand(inte,0,0);
     public void testVerifyC() {
         // create and configure mock
 
-        when(databaseMock.getUniqueId()).thenReturn("cake");
-        databaseMock.getUniqueId();
+        when(mockA.getUniqueId()).thenReturn("cake");
+        mockA.getUniqueId();
         //  verify(database Mock).setUniqueId(ArgumentMatchers.eq("cake"));
-        verify(databaseMock).getUniqueId();
+        verify(mockA).getUniqueId();
 
         // call method testing on the mock with parameter 12
         //  databaseMock.setUniqueId("cake");

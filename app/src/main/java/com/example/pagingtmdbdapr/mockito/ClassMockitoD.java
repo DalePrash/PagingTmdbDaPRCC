@@ -31,9 +31,9 @@ public String methodDD()
 }
     public String methodDedependent(ClassMockitoC c)
     {
-        //String n = c.methodcc();
-      c.methodcc();
-      return "aaaa";
+        String n = c.methodcc();
+     // c.methodcc();
+      return n;
     }
 
 

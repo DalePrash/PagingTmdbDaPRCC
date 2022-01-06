@@ -13,7 +13,7 @@
             <intent-filter>
                 <action android:name="kit" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name="com.example.pagingtmdbdapr.snackbar.SnackBarActivity">
@@ -51,7 +51,7 @@
             <intent-filter>
                 <action android:name="android.intent.fs" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
@@ -60,7 +60,7 @@
             <intent-filter>
                 <action android:name="ghh" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
@@ -68,7 +68,7 @@
             <intent-filter>
                 <action android:name="addw" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
@@ -91,11 +91,12 @@
         </activity>
         <activity
             android:name="com.example.pagingtmdbdapr.ui.ConstraintActivityPractise"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            >
             <intent-filter>
                 <action android:name="fdsfsd" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
@@ -110,10 +111,10 @@
 
         <activity android:name="com.example.pagingtmdbdapr.viewmodel.ViewModelMain">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="lastone" />
 
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -131,7 +132,7 @@
             <intent-filter>
                 <action android:name="androdidf" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
@@ -141,7 +142,7 @@
             <intent-filter>
                 <action android:name="fsws" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
@@ -152,9 +153,21 @@
             <intent-filter>
                 <action android:name="android.intendd" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.pagingtmdbdapr.Toolmenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
 
 
         <service android:name=".service.bind.BindService"/>
