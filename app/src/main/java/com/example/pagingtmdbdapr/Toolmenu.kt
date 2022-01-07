@@ -1,5 +1,6 @@
 package com.example.pagingtmdbdapr
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.Menu
@@ -49,6 +50,17 @@ public class Toolmenu : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle presses on the action bar menu items
         when (item.itemId) {
+// for back buton below 
+            android.R.id.home->{
+
+                val intent = Intent()
+                intent.action= "launcha"
+                startActivity(intent)
+                return true
+
+            }
+
+
             R.id.action_cut -> {
                 textView.text = "Cut Clicked."
                 return true

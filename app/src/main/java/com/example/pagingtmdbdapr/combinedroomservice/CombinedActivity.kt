@@ -46,6 +46,8 @@ public class CombinedActivity  : AppCompatActivity() {
 
     fun goTOnextScreen() {
         val resultIntent = Intent(this, ActivityMovieRetrieveCache::class.java)
+     //  resultIntent.flags=Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FL
+    //    resultIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(resultIntent)
 
     }
