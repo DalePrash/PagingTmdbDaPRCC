@@ -50,7 +50,7 @@ public class Toolmenu : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle presses on the action bar menu items
         when (item.itemId) {
-// for back buton below 
+// for back buton below
             android.R.id.home->{
 
                 val intent = Intent()
